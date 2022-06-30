@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@300&display=swap');
+/* reset */
+*{
+	font-family: 'Poppins', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-color: #081148;
+}
+
+h1{
+	font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+	color:#b54746
+}
+h3{
+	font-size: 1.5rem;
+	color:#b54746
+}
+h4{
+    font-size: 1.2rem;
+}
+
+/*main index*/
+main section img{
+	width: 100%;
+}
+
+section article p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+/* ============== MOBILE FIRST =============== */
+@media (min-width: 320px){
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav" 
+	"header" 
+	"gallery"
+	"contenido" 
+	"services" 
+	"form" 
+	"footer";
+}
+
+/*nombres areas del layout*/
+	#mainNav{
+		grid-area: nav;
+	}
+
+	#cabeza{
+		grid-area: header;
+	}
+
+	#contenido{
+		grid-area: contenido;
+		background-color: #ffffff;
+	}
+
+	#services{
+		grid-area: services;
+	}
+
+	#gallery{
+		grid-area: gallery;
+	}
+
+	#form{
+		grid-area: form;
+	}
+
+	#footer{
+		grid-area: footer;
+	}
+}
+
+/*selector de clase*/
+
+.text-bold{
+	font-weight: 500;
+}
+
+.text-light{
+	font-weight: 300;
+}
+
+.text-regular{
+	font-weight: 400;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.bg-dark{
+	background-color: #CEC9C9;
+}
+
+.bg-light{
+	background-color: #ffffff;
+	color:#081148;
+}
+/*nav all pages*/
+
+.nav{
+	background: linear-gradient(#ffffff, #CEC9C9);	
+	opacity: .85;
+	display: flex;
+	justify-content: space-between;
+	/*position*/
+    position: fixed;
+    width: 100%;
+    padding: 2px 0px;
+		}
+
+		.nav img{
+			float: left;
+		}
+	
+		.nav ul{
+		float: right;
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-end;
+		}
+
+		.nav ul li {
+			list-style: none;
+			display: inline-block;
+			margin: 0 6px;
+		}
+
+		.nav ul li a{
+			font-size: 1.2rem;
+			text-decoration: none;
+			color: #000000;
+		}
+
+/*index*/
+
+/*Clases BEM */
+.encabezado__box{
+	text-align: center;
+	background-color: #c53c37;
+	/*padding*/
+	padding: 5px 0;
+	width: 100vw !important;
+}
+
+.encabezado__img--fluid{
+	/*size*/
+	width: 100%;
+}
+
+.header section{
+	margin: 25px;
+	padding: 5px 60px 40px 60px;
+	border: none;
+}
+
+/* servicios del index */
+#services{
+	margin: 20px 0;
+}
+	#services div article {
+		margin: 20px 0;
+		box-sizing: content-box;
+		width: 50%;
+	}
+		#services div img{
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			width: 100%;
+		}
+
+.ourservices__articulo{
+	width: 90%;
+	height: auto;
+	/*
+	margin: 20px 10px 20px 10px;
+	margin: 10px;*/
+	margin: 20px auto;
+	padding: 20px 20px;
+	border: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	box-sizing: border-box;
+	color:#ffffff;
+}
+
+.section_ul_li_img{
+	list-style: none;
+	/*display*/
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.services_right_text{
+	box-sizing: content-box;
+	width: 50%;
+	/*margin*/
+	margin: 30px;
+}
+
+.services_left_image{	
+	box-sizing: content-box;
+	width: 50%;
+	border-image-width: 40%;
+	/*margin*/
+	margin: 10px;
+	padding: 20px;
+}
+
+/*services PAGINA*/
+
+.tittle_section{
+	margin: 100px 25px 25px 25px;
+	padding: 10px 30px;
+}
+
+.services{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.service{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	margin: 1rem;
+}
+.service img{
+	width: 90%;
+}
+.service h4{
+	color:aqua
+}
+
+.flex{
+	/*box*/
+	margin: 20px auto;
+	padding: 20px 20px;
+	border: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	box-sizing: border-box;
+	/*display*/
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+}
+
+.flex2{
+	/*box*/
+	margin: 20px auto;
+	padding: 20px 20px;
+	border: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	box-sizing: border-box;
+	/*display*/
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/*footer*/
+
+.footer{
+	background: linear-gradient(#ffffff, #CEC9C9);	
+	/*display*/
+	display: flex;
+	justify-content: space-between;
+	/*position*/
+	width: 100%;
+	/*padding*/
+	padding: 4px 30px;
+		}
+		
+.footer ul{
+	justify-content: flex-end;
+	list-style: none;
+	/*display*/
+	display: flex;
+	/*padding*/
+	padding: 10px 0;
+}
+
+/*gallery*/
+
+
+
+/*contactus*/
+
+/* ======================= media queries INDEX ======================= */
+
+/* min-width: 768px definimos 2cols (30VW - 70VW) y 5 rows auto */
+@media (min-width: 768px){
+	.contenedor{
+
+	}
+}
+
+/* min-width: 1024px defino 3 cols con medidas vw y 4 rows*/
+@media (min-width: 1024px){
+	
+	.contenedor{
+	}
+}
+
+/* min-width: 1200px cambio la dirección de la gale de productos a row*/
+@media (min-width: 1200px){
+	.contenedor{
+	}
+}
+
+/* ======================= media queries SERVICES ======================= */
+
+/* min-width: 768px definimos 2cols (30VW - 70VW) y 5 rows auto */
+@media (min-width: 768px){
+	.contenedor{
+
+	}
+}
+
+/* min-width: 1024px defino 3 cols con medidas vw y 4 rows*/
+@media (min-width: 1024px){
+	
+	.contenedor{
+	}
+}
+
+/* min-width: 1200px cambio la dirección de la gale de productos a row*/
+@media (min-width: 1200px){
+	.contenedor{
+	}
+}
+
+
+
+
+
+----------------
+/*MERGEAR AGREGADO DE CSS
+PARA AGREGAR .... VAMOS A CAMBIAR LA TRANSICION DEL HEADER*/
+/* ============= animaciones ==================== */
+
+@keyframes headerindexAnimation{
+	0%{background-image: url(../imagenes/posiblefondo3.jpeg)}
+	33%{background-image: url(../imagenes/fototra1.jpg)}
+	69%{background-image: url(../imagenes/fototra2.jpg)}
+	100%{background-image: url(../imagenes/fototra3.jpg)}
+}
+
+.headerindex{
+	height: 60vh;
+	animation-name:headerindexAnimation;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    animation-timing-function: ease;
+}
+
+*,
+*::before,
+*:after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.nav ul li a{
+	position: relative;
+}
+
+.nav ul li a:after{
+	position: absolute;
+	background-color: #53a7ea;
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -10px;
+	transition: 0.3s;
+}
+
+.nav ul li a:hover{
+	color:#c53c37;
+}
+
+.nav ul li a:hover:after{
+	width: 100%;
+	text-decoration: underline;
+}
+

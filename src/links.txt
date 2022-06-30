@@ -1,0 +1,17 @@
+Google Color picker
+https://htmlcolors.com/google-color-picker
+
+Safe fonts
+https://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+Background-size
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background-size
+
+Background-position
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss_background-position
+
+Background-attachment
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss_background-attachment
+
+Google Fonts
+https://fonts.google.com/
