@@ -227,9 +227,11 @@ section article p{
 
 /* ============= animaciones ==================== */
 
+
 @keyframes headerindexAnimation{
 	0%{background-image: url(../imagenes/posiblefondo3.jpeg)}
-	50%{background-image: url(../imagenes/fototra1.jpg)}
+	33%{background-image: url(../imagenes/fototra1.jpg)}
+	69%{background-image: url(../imagenes/fototra2.jpg)}
 	100%{background-image: url(../imagenes/fototra3.jpg)}
 }
 
@@ -240,6 +242,37 @@ section article p{
     animation-iteration-count: infinite;
     background-size: cover;
     animation-timing-function: ease;
+}
+
+*,
+*::before,
+*:after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.nav ul li a{
+	position: relative;
+}
+
+.nav ul li a:after{
+	position: absolute;
+	background-color: #53a7ea;
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -10px;
+	transition: 0.3s;
+}
+
+.nav ul li a:hover{
+	color:#c53c37;
+}
+
+.nav ul li a:hover:after{
+	width: 100%;
+	text-decoration: underline;
 }
 
 /*index*/
@@ -259,8 +292,6 @@ section article p{
 	width: 100%;
 	padding: 6em 0em 0em 0em;
 }
-
-
 
 .services{
 	box-sizing: content-box;
