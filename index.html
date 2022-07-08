@@ -86,44 +86,58 @@
 	  <!-- ends header -->
 	  <!-- fila de información de mi sitio -->
 	  <main class="contenido text-center">
-		  <article class="box2">
+		<div class="box2">
+		  <article>
 			  <h2>OUR SERVICES</h2>
 			  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, ipsum? Modi eaque voluptatem velit, odit fuga voluptate asperiores ratione non libero fugit? Laboriosam maiores aperiam corporis quis, rem sint corrupti.</p>
 			  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, ipsum? Modi eaque voluptatem velit, odit fuga voluptate asperiores ratione non libero fugit? Laboriosam maiores aperiam corporis quis, rem sint corrupti.</p>		
 		  </article>
+		</div>
 		  <!-- agregar un boton "know more"-->
 	  
 	  <!-- descripcion de servicios -->
-		  <section class="services">
-			  <div>
-			  <article>
-				  <h3>COMMERCIAL VEHICLE WRAPS</h3>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque reiciendis illo sunt cumque quam eos sint libero ipsa at eligendi, molestias omnis aperiam, quidem distinctio quia quos. Voluptate, est praesentium!</p>
-			  </article>
-				  <img src="./imagenes/wrap3.jpeg">
+		  <div class="row row-cols-1 row-cols-md-2 g-4 box2">
+			<div class="col">
+			  <div class="card">
+				<img src="./imagenes/wrap3.jpeg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h3 class="card-title">COMMERCIAL WRAPS</h3>
+				  <p class="card-text">Lorem ipsum dolor sit adipisicing elit. nesciunt itaque atque, sed aliquam architecto cumque reiciendis, minima facilis unde iure laboriosam blanditiis possimus soluta voluptatem voluptate laborum?.</p>
+				</div>
 			  </div>
-			  <div>
-			  <article>
-				  <h3>PARTIAL & FULL WRAPS</h3>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque reiciendis illo sunt cumque quam eos sint libero ipsa at eligendi, molestias omnis aperiam, quidem distinctio quia quos. Voluptate, est praesentium!</p>
-			  </article>
-				  <img src="./imagenes/wrap2.jpeg">
-			  </div>	
-			  <div>
-			  <article>
-				  <h3>MOVIL ADVERTISING</h3>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque reiciendis illo sunt cumque quam eos sint libero ipsa at eligendi, molestias omnis aperiam, quidem distinctio quia quos. Voluptate, est praesentium!</p>
-			  </article>
-				  <img src="./imagenes/wrap5.jpeg">
-			  </div>		
-			  <div>
-			  <article>
-				  <h3>WINDOW PERF</h3>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque reiciendis illo sunt cumque quam eos sint libero ipsa at eligendi, molestias omnis aperiam, quidem distinctio quia quos. Voluptate, est praesentium!</p>
-			  </article>
-				  <img src="./imagenes/wrap4.jpeg">
-			  </div>			
-		  </section>
+			</div>
+			<div class="col">
+			  <div class="card">
+				<img src="./imagenes/wrap2.jpeg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h3 class="card-title">PARCIAL & FULL WRAPS</h3>
+				  <p class="card-text">Lorem ipsum dolor sit amet consectetur, aaaaa, wwadipisicing elit. iusto repudiandae at odit quas quasi vel fugit et minima architecto quae quidem non nulla optio consectetur obcaecati.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card">
+				<img src="./imagenes/wrap5.jpeg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h3 class="card-title">MOVIL ADVERTISING</h3>
+				  <p class="card-text">Lorem ipsum dolor si, adipisicing elit. In eius veniam nesciunt ratione consequatur iste laudantium, beatae facilis doloremque doloribus voluptate nam voluptatum deleniti aperiam magnam maiores obcaecati deserunt</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card">
+				  <img src="./imagenes/wrap4.jpeg" class="card-img-top" alt="...">
+				  <div class="card-body">
+					  <h3 class="card-title">WINDOW PERF</h3>
+					  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque totam nisi voluptates dicta quaerat repellat modi est culpa maxime deleniti omnis, quis quibusdam perspiciatis similique a iure rerum ut laudantium.</p>
+					</div>
+				</div>
+			</div>
+			<div class="d-grid gap-2 col-6 mx-auto">
+				<a href="pages/services.html" title="Visit Wrap Services" class="btn btn-common wow animated" style="visibility: visible;">More Services</a>
+			  </div>
+		  </div>
+<!--cards -->
 		  <!-- galeria -->
 		  <section>
 			  <article class="gallery" >
@@ -136,7 +150,7 @@
 				  <li><img src="imagenes\FW0154D_Message-from-Tombs_0001.jpg"></li>
 			  </ul>
 			  </div>
-			  </article>
+			</article>
 		  </section>
 		  <!-- contactanos -->
 		  <section class="box3" id="form">
@@ -145,13 +159,9 @@
 			  <h2>CONTACT US</h2>
 			  <h3>Tell us about your project!</h3>
 				  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam quam excepturi recusandae aliquam minus ea voluptas soluta, numquam optio odio praesentium quaerat, fuga obcaecati sed, laboriosam at in, necessitatibus.</p>	
-				  <table>
-					  <tr>
-					  <td>
-						  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12574.580601619808!2d-57.5736739!3d-38.0087366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x643af57e4933f20!2sCasa%20del%20Puente!5e0!3m2!1ses-419!2sar!4v1619616783943!5m2!1ses-419!2sar" width="90%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-					  </td>
-					  </tr>
-				  </table>
+				 <p>LOCATION & ADDRESS
+					Narcoossee Road, Orlando, Florida, US</p> 
+				  <p>Phone Number: +1 00000000</p>
 		  </article>
 		  </div>		
 			  <!-- formulario de contacto -->
@@ -159,26 +169,26 @@
 			  <article class="text-center">
 				<fieldset>
 				  <form action="contacto.php">
-						  <legend> Tell us about your project! </legend>
-						<div class="mb-3">
+						  <legend> <h3>Please use the form to
+							make a general enquiry.</h3> </legend>
+						<div class="mb-3" id="formulario">
 						  <label for="name" class="form-label">NAME:</label>
 						  <input type="text" name="name" placeholder="Your Name" class="form-control">
 						</div>
-						<div class="mb-3">
+						<div class="mb-3" id="formulario">
 						  <label for="phonenumber" class="form-label"> PHONE NUMBER: </label>
 						  <input type="text" name="phonenumber" placeholder="+ (1) 111 1111111 " class="form-control">
 					  	</div>
-						<div class="mb-3">
+						<div class="mb-3" id="formulario">
 						  <label for="email" class="form-label"> EMAIL: </label>
 						  <input type="email" name="email" placeholder="ejemplo@mail.com" class="form-control">
 					 	</div>
-						<div class="mb-3">
+						<div class="mb-3" id="formulario">
 						  <label for="message" class="form-label"> YOUR REQUEST: </label>
 						  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Hello! I want...."></textarea>
 						</div>
 					</form>
 				</fieldset>
-				<button type="submit" class="btn btn-primary">Submit</button>
 			  </article>
 			</div>
 		  </section>

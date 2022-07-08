@@ -12,35 +12,35 @@ html{
 
 body{
 	background-color: #ffffff;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 }
 
 h1{
-	font-size: 2.4rem;
+	font-size: 3rem;
 }
 h2{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 	color:#b54746;
 }
 h3{
-	font-size: 1.8rem;
+	font-size: 2rem;
 	color:#b54746;
 }
 h4{
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 }
 
 p{
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 }
 
 section article p{
-	font-family: 'Quicksand', sans-serif;
-	font-size: 1.2rem;
-	line-height: 1.6rem;
+	line-height: 1.7rem;
 	padding: 1rem;
 }
-
+ul{
+	list-style: none;
+}
 /* ============== MOBILE FIRST =============== */
 
 .grid-container-index{
@@ -155,7 +155,7 @@ section article p{
 
 .box1{
 	box-sizing: content-box;
-    padding: 30px;
+    padding: 40px;
     background-color: #ffffff;
     text-align: center;
 	border-bottom-style: groove;
@@ -171,12 +171,16 @@ section article p{
 
 .box2{
 	box-sizing: content-box;
-	padding: 20px 50px;
-    background-color: #b8b5b5;
+    background-color: #f1f1f1;
     text-align: center;
+	padding: 1rem;
 }
+	.box2 article{
+		padding: 20px 50px;
+	}
+
 	.box2 p{
-		color:#ffffff;
+		color:#081148;
 	}
 
 .box3{
@@ -204,6 +208,15 @@ section article p{
     animation-timing-function: ease;
 }
 
+.btn-common {
+    border: 1px solid #fff;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    border-radius: 50px;
+    background-color: #c53c37;
+	font-size: 1.8rem;
+}
 
 /*index*/
 
@@ -227,12 +240,11 @@ section article p{
 	box-sizing: content-box;
 	text-align: center;
 	padding: 10px;
-	border-bottom: groove;
-	background-color: #081148;
+	background-color: #dee2e63d;
 }
 	.services div article {
 		padding: 10px 30px;
-		color:#ffffff
+		color:#081148
 	}
 		.services div img{
 			border-radius: 2px;
@@ -260,11 +272,21 @@ section article p{
 	}
 
 .asked{
-	padding: 10px;
+	padding: 20px;
 	background-color: white;
 
 }
+.asked h2{
+	padding: 10px;
+}
+.accordion-button:not(.collapsed) {
+    color: #b54746;
+    background-color: #dee2e63d;
+}
 
+.accordion-button {
+    font-size: 2rem;
+}
 
 /*footer*/
 
@@ -370,6 +392,13 @@ section article p{
 
 /* ======================= media queries ======================= */
 
+@media (min-width: 768px){
+.row-cols-md-2>* {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: 1rem;
+}
+}
 /* min-width: 1024px */
 /*-- index --*/
 
@@ -411,6 +440,12 @@ section article p{
 			}
 
   /*servicios en dos columnas*/
+
+  .row-cols-md-2>* {
+    flex: 0 0 auto;
+    width: 25%;
+    padding: 0.5rem;
+}
 	.services{
 		text-align: center;
 		margin: 0px;
@@ -422,7 +457,6 @@ section article p{
 			align-items: center;
 			justify-content: center;
 			width: 95%;
-			border-bottom-style: groove;
 		}
 
 			.services div article p{
@@ -458,7 +492,6 @@ section article p{
 
 .box3{
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 	flex-direction: row;
 }
@@ -470,7 +503,10 @@ section article p{
 	.box3 div article td {
 		align-items: center;
 	}
-
+	
+#formulario{
+	width: 100%;
+}
 
 /* -- services --*/
 
