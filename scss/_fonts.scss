@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@300&display=swap');
+
+
+//fonts
+$mainFont:'Poppins', sans-serif;
+$secondaryFont:'Quicksand', sans-serif;
+
+//text sizing
+$textSm:1em;
+$textMd:1.2em;
+$textLg:2.2em;
+$textXl:3.2em;
+
+//font - weight
+$bold:600;
+$regular:400;
+$light:300;
+
+
+//clases 
+.textDestacado{
+	background-color: #2c1333;
+}
+
+.textBold{
+	font-weight: $bold;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}

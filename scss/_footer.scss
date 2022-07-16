@@ -1,0 +1,31 @@
+/*footer*/
+
+.footer{
+	background: linear-gradient(#ffffff, #CEC9C9);	
+	border-top-style: groove;
+	padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    section{
+        width: 25%;
+        img{
+        width: 50%;
+        margin: -2px 3px;
+        }
+    }
+    ul{
+		list-style: none;
+		/*display*/
+		display: flex;
+        justify-content: flex-end;
+		width: 40%;
+		/*padding*/
+		padding: 10px 0;
+        li{
+            width: 25%;
+        }
+        img{
+        width: 35%;
+        }
+    }
+}
