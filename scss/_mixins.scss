@@ -1,0 +1,51 @@
+// extends
+
+.box3{
+    box-sizing: content-box;
+    padding: 15px;
+    text-align: center;
+}
+
+.sombrita{
+    @extend .box3;
+    animation: shadow-drop-tb 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+//mixins 
+@mixin boxes ($textalign, $padding, $background){
+    box-sizing: content-box;
+    text-align: $textalign;
+    padding: $padding;
+    background-color: $background;
+}
+.box1{
+    @include boxes(center, 40px, #ffffff)
+}
+
+.box2{
+    @include boxes(center, 1rem, #f1f1f1)
+}
+
+
+//maps
+$paleta:(
+	'uno': #c53c37,
+    'dos': #b54746,
+    'tres':#703041,
+    'cuatro':#081148,
+    'cinco': #2c1333,
+    'seis': #454871,
+    'siete':#e205bb,
+	'ocho': #dee2e63d,
+    'nueve': #b8b5b5,
+    'diez': #CEC9C9,
+
+	);
+
+.bg-navv{
+	background-color: map-get($map:$paleta, $key:'diez');
+}
+
+.bg-dark{
+	background-color:map-get($map:$paleta, $key:'ocho')
+}
