@@ -23,7 +23,7 @@ $light:300;
 }
 
 .textBold{
-	font-weight: $bold;
+	font-weight: bold;
 }
 
 .textCenter{
@@ -36,4 +36,8 @@ $light:300;
 
 .textLeft{
 	text-align: left;
+}
+
+.smalltext{
+	font-size: 1.4rem;
 }

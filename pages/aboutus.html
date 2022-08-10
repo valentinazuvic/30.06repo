@@ -17,14 +17,14 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;500;600;700&display=swap" rel="stylesheet">
 	<!-- mi css externo--> 
-	<link rel="stylesheet" href="..\css\styles.css">
+	<link rel="stylesheet" href="..\scss\main.css">
 	<title>All 4 Wraps Solutions: About us</title>
 </head>
 
 
 <body class="grid-container-aboutus bg-light text-center">
 		<!-- fila de logo + nav --> 
-		<nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-navv">
+		<nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-navv sticky-top shadow p-3 bg-body">
 			<div class="container-fluid">
 			  <a class="navbar-brand" href="../index.html"> <img src="../imagenes/logo.svg" alt="img logo" width="102" height="71"> </a>
 			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,11 +68,27 @@
 		</article>
 		<img src="../imagenes/company.jpg">
 	</div>
-	<div>
-		<article class="bg-dark">
-			<video src="../imagenes/videowrapping.mp4" autoplay muted loop class="sombrita"></video>
-		</article>
-	</div>
+	<section class="box4">
+		<ul>
+			<li>
+			<img src="../imagenes/iconos/time.svg">
+				<h3>Quick Response</h3>
+			<p>We answer you and quote in less than a day. We adjust to your times! We can install on weekends too.</p> 
+			</li>
+			<li>
+				<img src="../imagenes/iconos/profesional.svg">
+				<h3>Professional Service</h3>
+			<p>We offer a complete service with the best professionals. From the design of the wrap, the materials and its installation.</p></li>
+			<li>
+				<img src="../imagenes/iconos/quality.svg">
+				<h3>Quality Guarantee</h3>
+			<p>We use only the highest quality materials in order to provide high definition with longer lasting vivid colors, and durability</p></li>
+			<li>
+				<img src="../imagenes/iconos/inventory.svg">
+				<h3>Huge Inventory</h3>
+			<p>We have more than 400 vinyls for all uses, mainly from the 3M and Wrap companies... Always guaranteeing durability</p></li>
+		</ul>	
+	</section>
 	<div>
 		<article>
 			<h2>WHY ALL4WRAPS SOLUTIONS?</h2>
@@ -81,23 +97,30 @@
 				<p>Contact All4wrapsolutions at (305) 549-0922 or email us at all4wrapsolutions@gmail.com to receive a quote for your custom project.</p>
 
 			</article>
-		<img src="../imagenes/etiqueta-de-calidad-garantizada-g359bc.jpg">
+		<img src="../imagenes/fototra1.jpg" alt="Calidad All4Wrap Solutions">
 		</div>
 	</section>
 </main>
 	<!-- inicio de footer --> 
-	<footer class="footer" id="footer">
-		<section>
-			<img src="../imagenes/logo.svg">
-		</section>
+	<footer class="footer text-center" id="footer">
+		<div>
+		  <h4 class="textBold">FOLLOW US</h4>
+		</div>
+		<div>
 		<ul>
-		<li><img src="../imagenes/iconos/facebook.png"></li>
-		<li><img src="../imagenes/iconos/twitter.png"></li>
-		<li><img src="../imagenes/iconos/instagram.png"></li>
-		<li><img src="../imagenes/iconos/linkedin.png"></li>
+		<li><a href="https://instagram.com/all4wrapsolutions?igshid=YmMyMTA2M2Y=" target="_blank"> <img src="../imagenes/iconos/facebook.png" alt="Logo de Facebook"></li> </a>
+		<li><a href="https://instagram.com/all4wrapsolutions?igshid=YmMyMTA2M2Y=" target="_blank"> <img src="../imagenes/iconos/instagram.png" alt="Logo de Instagram"></li> </a>
+		<li><a href="https://instagram.com/all4wrapsolutions?igshid=YmMyMTA2M2Y=" target="_blank"> <img src="../imagenes/iconos/linkedin.png" alt="Logo de Linkedin"></li> </a>
+		<li><a href="https://api.whatsapp.com/send?phone=01 305 549 0922" target="_blank"> <img src="../imagenes/iconos/whatsapp.png" alt="Logo de Whatsapp"></li> </a>
 		</ul>
+	  </div>
+	  <div>
+		  <p class=" ">8317 Narcoossee rd, Orlando , Fl 32827 | all4wrapsolutions@gmail.com | +1 (305) 549-0922</p>
+	  </div>
+	  <div>
+		  <p class="smalltext">© All 4 Wraps Solutions, 2022 | All rights reserved.</p>
+	  </div>
 	</footer>
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

@@ -1,5 +1,9 @@
 .navbar{
     background-color: $mainColor;
+    box-shadow: 0 0.5rem 1remrgba(0,0,0,0.15),inset 0 -1px 0 rgba(0,0,0,0.15);
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1.5rem;
+}
 

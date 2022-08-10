@@ -17,7 +17,7 @@
 		<!-- Bootstrap CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<!-- MI CCS EXTERNO --> 
-		<link rel="stylesheet" href="css\styles.css">
+		<link rel="stylesheet" href="scss\main.css">
 		
 		<link rel="shortcut icon" href="./imagenes/logo.svg">
 		<title>ALL 4 WRAPS SOLUTIONS: The best Vehicle Wraps In Orlando </title>
@@ -25,7 +25,7 @@
 	
 	<body class="grid-container-index bg-light text-center">
 		<!-- fila de logo + nav --> 
-	<nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-navv">
+	<nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-navv sticky-top shadow p-3 bg-body">
 		<div class="container-fluid">
 		  <a class="navbar-brand" href="#"> <img src="imagenes/logo.svg" alt="img logo" width="102" height="71"> </a>
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,8 +109,8 @@
 	  <!-- descripcion de servicios -->
 		  <div class="row row-cols-1 row-cols-md-2 g-4 box2">
 			<div class="col">
-			  <div class="card">
-				<img src="./imagenes/wrap3.jpeg" class="card-img-top" alt="comercial vehicle wraps services">
+			  <div class="card h-100">
+				<img src="./imagenes/commercialwrap1.webp" class="card-img-top" alt="comercial vehicle wraps services">
 				<div class="card-body">
 				  <h3 class="card-title">COMMERCIAL WRAPS</h3>
 				  <p class="card-text">Whether you have only one vehicle or a whole fleet, cars, vans, buses, trains
@@ -120,8 +120,8 @@
 			  </div>
 			</div>
 			<div class="col">
-			  <div class="card">
-				<img src="./imagenes/wrap2.jpeg" class="card-img-top" alt="partial and full vehicle wraps services">
+			  <div class="card h-100">
+				<img src="./imagenes/fullwrap.svg" class="card-img-top" alt="partial and full vehicle wraps services">
 				<div class="card-body">
 				  <h3 class="card-title">PARCIAL & FULL WRAPS</h3>
 				  <p class="card-text">We can wrap your vehicle in whole or partial, whether is a color change or
@@ -130,8 +130,8 @@
 			  </div>
 			</div>
 			<div class="col">
-			  <div class="card">
-				<img src="./imagenes/wrap5.jpeg" class="card-img-top" alt="movil advertising for vehicles services">
+			  <div class="card h-100">
+				<img src="./imagenes/wrap7.svg" class="card-img-top" alt="movil advertising for vehicles services">
 				<div class="card-body">
 				  <h3 class="card-title">MOVIL ADVERTISING</h3>
 				  <p class="card-text">When you need to advertise your brand, vehicle wraps are one of the most
@@ -140,8 +140,8 @@
 			  </div>
 			</div>
 			<div class="col">
-			  <div class="card">
-				  <img src="./imagenes/wrap4.jpeg" class="card-img-top" alt="window perf install services">
+			  <div class="card h-100">
+				  <img src="./imagenes/windowperf.svg" class="card-img-top" alt="window perf install services">
 				  <div class="card-body">
 					  <h3 class="card-title">WINDOW PERF</h3>
 					  <p class="card-text">Vehicle windows, business or office windows, we can print your images on
@@ -160,10 +160,10 @@
 			  <h2>OUR BEST WORK</h2>
 			  <div>
 			  <ul>
-				  <li><img src="imagenes/PW0051A_0001.jpg"></li>
-				  <li><img src="imagenes\FW0318A_001.jpg"></li>
-				  <li><img src="imagenes\FW0316A_0001.jpg"></li>
-				  <li><img src="imagenes\FW0154D_Message-from-Tombs_0001.jpg"></li>
+				  <li><img src="imagenes/PW0051A_0001.jpg" class="scalecenter"></li>
+				  <li><img src="imagenes\FW0318A_001.jpg" class="scalecenter"></li>
+				  <li><img src="imagenes\FW0316A_0001.jpg" class="scalecenter"></li>
+				  <li><img src="imagenes\FW0154D_Message-from-Tombs_0001.jpg" class="scalecenter"></li>
 			  </ul>
 			  </div>
 			</article>
@@ -174,12 +174,13 @@
 		  <article>
 			  <h2>CONTACT US</h2>
 			  <h3>Tell us about your project!</h3>
-			  <p>Address: 8317 Narcoossee rd, Orlando , Fl 32827</p> 
+			  <p>__</p> 
 			  <p>Phone Number: 305-549-0922</p>
 			  <p>email: all4wrapsolutions@gmail.com</p>
 			  <p>Instagram: @all4wrapsolutions</p>
 			  <p>Facebook: all4wrapsolutions</p>
 				  <p>All4wrapsolutions LLC.</p>	
+				  <p>__</p> 
 		  </article>
 		  </div>		
 			  <!-- formulario de contacto -->
@@ -205,6 +206,7 @@
 						  <label for="message" class="form-label"> YOUR REQUEST: </label>
 						  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Hello! I want...."></textarea>
 						</div>
+						<button class="button mx-auto">Submit</button>
 					</form>
 				</fieldset>
 			  </article>
@@ -212,17 +214,25 @@
 		  </section>
 	  </main>
 	  <!-- inicio de footer --> 
-	  <footer class="footer" id="footer">
-		  <section>
-			  <img src="imagenes/logo.svg">
-		  </section>
-		  <ul>
-		  <li><img src="imagenes/iconos/facebook.png"></li>
-		  <li><img src="imagenes/iconos/twitter.png"></li>
-		  <li><img src="imagenes/iconos/instagram.png"></li>
-		  <li><img src="imagenes/iconos/linkedin.png"></li>
-		  </ul>
-	  </footer>
+	  <footer class="footer text-center" id="footer">
+		<div>
+		  <h4 class="textBold">FOLLOW US</h4>
+		</div>
+		<div>
+		<ul>
+		<li><a href="https://instagram.com/all4wrapsolutions?igshid=YmMyMTA2M2Y=" target="_blank"> <img src="imagenes/iconos/facebook.png" alt="Logo de Facebook" class="scale-up-center"></li> </a>
+		<li><a href="https://instagram.com/all4wrapsolutions?igshid=YmMyMTA2M2Y=" target="_blank"> <img src="imagenes/iconos/instagram.png" alt="Logo de Instagram"></li> </a>
+		<li><a href="https://instagram.com/all4wrapsolutions?igshid=YmMyMTA2M2Y=" target="_blank"> <img src="imagenes/iconos/linkedin.png" alt="Logo de Linkedin"></li> </a>
+		<li><a href="https://api.whatsapp.com/send?phone=01 305 549 0922" target="_blank"> <img src="imagenes/iconos/whatsapp.png" alt="Logo de Whatsapp"></li> </a>
+		</ul>
+	  </div>
+	  <div>
+		  <p class=" ">8317 Narcoossee rd, Orlando , Fl 32827 | all4wrapsolutions@gmail.com | +1 (305) 549-0922</p>
+	  </div>
+	  <div>
+		  <p class="smalltext">© All 4 Wraps Solutions, 2022 | All rights reserved.</p>
+	  </div>
+	</footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -17,14 +17,14 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;500;600;700&display=swap" rel="stylesheet">
 	<!-- mi css externo--> 
-	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../scss\main.css">
 
 	<title>All 4 Wraps Solutions: Contact Us</title>
 
 	</head>
 	<body class="grid-container-contactus bg-light text-center">
 			<!-- fila de logo + nav --> 
-			<nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-navv">
+			<nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-navv sticky-top shadow p-3 bg-body">
 				<div class="container-fluid">
 				  <a class="navbar-brand" href="../index.html"> <img src="../imagenes/logo.svg" alt="img logo" width="102" height="71"> </a>
 				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,20 +61,29 @@
 	<main id="contenido">
 		<section class="box1">
 			<ul>
-				<li>Contact Adress
-				<p>dirección empresa<p></li>
-				<li>Let's Talk
-				<p>+183932828239<p></li>
-				<li>Email Us
-				<p>info@fkjiojrfri.<p></li>
+				<li>
+				<img src="../imagenes/iconos/address.png">
+					<h3>Contact Adress</h3>
+				<p>8317 Narcoossee Rd,</p> 
+				<p>Orlando , Fl 32827</p>
+				</li>
+				<li>
+					<img src="../imagenes/iconos/letstalk.png">
+					<h3>Let's Talk</h3>
+				<p>+1 (305) 549-0922</p></li>
+				<li>
+					<img src="../imagenes/iconos/emailus.png">
+					<h3>Email Us</h3>
+				<p>all4wrapsolutions@gmail.com</p></li>
 			</ul>	
 		</section>
 		<section class="box1">
 			<article>
+				<h3> You know where to find us! </h3>
 				<table>
 					<tr>
 						<td>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12574.580601619808!2d-57.5736739!3d-38.0087366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x643af57e4933f20!2sCasa%20del%20Puente!5e0!3m2!1ses-419!2sar!4v1619616783943!5m2!1ses-419!2sar" class="d-block w-100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.12535001648!2d-81.26456595018641!3d28.44563749918176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e763d1f0455eef%3A0x231cfdf93f39b81e!2s8327%20Narcoossee%20Rd%2C%20Orlando%2C%20FL%2032827%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1660047390790!5m2!1ses-419!2sar" class="d-block w-100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</td>
 					</tr>
 				</table>
@@ -82,28 +91,35 @@
 		</section>
 		<!-- formulario de contacto -->
 		<section id="form" class="box3">
-			<div>
+			<div class="d-flex justify-content-center">
 			<article>
-			<h3>CONTACT FORM</h3>
-			<p>Should your project be for creative marketing or a simple cost efficient alternative to painting your vehicle, contact us for a quote on our quality based results.
-
-				Contact All4wrapsolutions at (305) 549-0922 or email us at all4wrapsolutions@gmail.com to receive a quote for your custom project.</p>
+			<p>Should your project be for creative marketing or a simple cost efficient alternative to painting your vehicle,</p>
+			<p>Contact us for a quote on our quality based results.</p>
+			<p>All4wrapsolutions at (305) 549-0922 or email us at all4wrapsolutions@gmail.com to receive a quote for your custom project.</p>
 		</article>
 		</div>
 		<div>
 		<article>
 			<form action="contacto.php">
 				<fieldset class="form">
-					<legend><h3> Leave us a message! </h3></legend>
-					<label for="name">NAME:</label>
-					<input type="text" name="name" placeholder="Your Name">
-					<label for="phonenumber"> PHONE NUMBER: </label>
-					<input type="text" name="phonenumber" placeholder="+ (1) 111 1111111 ">
-					<label for="email"> EMAIL: </label>
-					<input type="email" name="email" placeholder="ejemplo@mail.com">
-					<label for="message"> YOUR MESSAGE: </label>
-					<input type="message" name="message" placeholder="Hello! I want....">
-					<input id="input" type="submit" name="Submit">
+					<legend><h3> Get A Free Quote! </h3></legend>
+					<div class="mb-3" id="formulario">
+						<label for="name" class="form-label">NAME:</label>
+						<input type="text" name="name" placeholder="Your Name" class="form-control">
+					  </div>
+					  <div class="mb-3" id="formulario">
+						<label for="phonenumber" class="form-label"> PHONE NUMBER: </label>
+						<input type="text" name="phonenumber" placeholder="+ (1) 111 1111111 " class="form-control">
+						</div>
+					  <div class="mb-3" id="formulario">
+						<label for="email" class="form-label"> EMAIL: </label>
+						<input type="email" name="email" placeholder="ejemplo@mail.com" class="form-control">
+					   </div>
+					  <div class="mb-3" id="formulario">
+						<label for="message" class="form-label"> YOUR REQUEST: </label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Hello! I want...."></textarea>
+					  </div>
+					  <button class="button mx-auto">Submit</button>
 				</fieldset>
 			</form>
 		</article>
@@ -111,18 +127,25 @@
 		</section>
 	</main>
 		<!-- inicio de footer --> 
-		<footer class="footer" id="footer">
-			<section>
-				<img src="../imagenes/logo.svg">
-			</section>
+		<footer class="footer text-center" id="footer">
+			<div>
+			  <h4 class="textBold">FOLLOW US</h4>
+			</div>
+			<div>
 			<ul>
-			<li><img src="../imagenes/iconos/facebook.png"></li>
-			<li><img src="../imagenes/iconos/twitter.png"></li>
-			<li><img src="../imagenes/iconos/instagram.png"></li>
-			<li><img src="../imagenes/iconos/linkedin.png"></li>
+			<li><a href="https://instagram.com/all4wrapsolutions?igshid=YmMyMTA2M2Y=" target="_blank"> <img src="../imagenes/iconos/facebook.png" alt="Logo de Facebook"></li> </a>
+			<li><a href="https://instagram.com/all4wrapsolutions?igshid=YmMyMTA2M2Y=" target="_blank"> <img src="../imagenes/iconos/instagram.png" alt="Logo de Instagram"></li> </a>
+			<li><a href="https://instagram.com/all4wrapsolutions?igshid=YmMyMTA2M2Y=" target="_blank"> <img src="../imagenes/iconos/linkedin.png" alt="Logo de Linkedin"></li> </a>
+			<li><a href="https://api.whatsapp.com/send?phone=01 305 549 0922" target="_blank"> <img src="../imagenes/iconos/whatsapp.png" alt="Logo de Whatsapp"></li> </a>
 			</ul>
+		  </div>
+		  <div>
+			  <p class=" ">8317 Narcoossee rd, Orlando , Fl 32827 | all4wrapsolutions@gmail.com | +1 (305) 549-0922</p>
+		  </div>
+		  <div>
+			  <p class="smalltext">© All 4 Wraps Solutions, 2022 | All rights reserved.</p>
+		  </div>
 		</footer>
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
